@@ -7,12 +7,14 @@ namespace FactorialKAta
     public class FactorialKataSpec
     {
         [Fact]
-        public void CantFindTheFactorialOfNegativeNumber()
+        public void Cant_Find_The_Factorial_Of_Negative_Number()
         {
             Action act = () => factorial.CalculateFactorial(-1);
 
             act.Should().Throw<ArgumentException>().WithMessage("Cant find the factorial of negative number");
         }
+
+
     }
 
     public static class factorial
