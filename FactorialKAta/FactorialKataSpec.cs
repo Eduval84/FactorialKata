@@ -21,12 +21,15 @@ namespace FactorialKAta
 
             result.Should().Be(1);
         }
+
     }
 
     public static class factorial
     {
         public static int CalculateFactorial(int i)
         {
+            if (i == 1)
+                return 1;
             throw new ArgumentException("Cant find the factorial of negative number");
         }
     }
