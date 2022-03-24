@@ -15,7 +15,7 @@ namespace FactorialKAta
         }
 
         [Fact]
-        public void factorial_of_number_one_is_one()
+        public void factorial_of_number_1_is_1()
         {
             var result=factorial.CalculateFactorial(1);
 
@@ -23,11 +23,19 @@ namespace FactorialKAta
         }
 
         [Fact]
-        public void factorial_of_number_two_is_2()
+        public void factorial_of_number_2_is_2()
         {
             var result = factorial.CalculateFactorial(2);
 
             result.Should().Be(2);
+        }
+
+        [Fact]
+        public void factorial_of_number_3_is_6()
+        {
+            var result = factorial.CalculateFactorial(3);
+
+            result.Should().Be(6);
         }
     }
 
