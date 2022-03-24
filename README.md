@@ -19,5 +19,5 @@ Cant find the factorial of negative number
 
 3 Factorial is 3*2*1
 
-4 Factorial is 4*3*2*1
+4 Factorial is 4 * 3 * 2 * 1
 
