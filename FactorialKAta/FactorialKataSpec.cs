@@ -37,6 +37,10 @@ namespace FactorialKAta
         {
             if (input == 1)
                 return 1;
+            else if (input == 2)
+            {
+                return 2;
+            }
 
             throw new ArgumentException("Cant find the factorial of negative number");
         }
