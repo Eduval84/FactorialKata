@@ -19,7 +19,7 @@ namespace FactorialKAta
     {
         public static void CalculateFactorial(int i)
         {
-            throw new NotImplementedException();
+            throw new ArgumentException("Cant find the factorial of negative number");
         }
     }
 }
