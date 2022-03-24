@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using Xunit;
 using FluentAssertions;
+using FluentAssertions.Execution;
 
 namespace FactorialKAta
 {
@@ -44,17 +45,17 @@ namespace FactorialKAta
     {
         public static int CalculateFactorial(int input)
         {
+            var factorial = 1;
+
             if (input <= 0)
                 throw new ArgumentException("Cant find the factorial of negative number");
 
-            if (input == 1)
-                return 1;
-            else if (input == 2)
-                return 2;
-            else if (input == 3)
-                return 6;
+            for (int num = input; num > 1; num--)
+            {
+                factorial = input * (input - 1);
+            }
 
-            return 0;
+            return factorial;
         }
     }
 }
