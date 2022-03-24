@@ -22,6 +22,13 @@ namespace FactorialKAta
             result.Should().Be(1);
         }
 
+        [Fact]
+        public void factorial_of_number_two_is_2()
+        {
+            var result = factorial.CalculateFactorial(2);
+
+            result.Should().Be(2);
+        }
     }
 
     public static class factorial
