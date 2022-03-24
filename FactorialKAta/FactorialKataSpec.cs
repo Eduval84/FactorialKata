@@ -26,10 +26,11 @@ namespace FactorialKAta
 
     public static class factorial
     {
-        public static int CalculateFactorial(int i)
+        public static int CalculateFactorial(int input)
         {
-            if (i == 1)
+            if (input == 1)
                 return 1;
+
             throw new ArgumentException("Cant find the factorial of negative number");
         }
     }
