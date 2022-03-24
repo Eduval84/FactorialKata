@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using Xunit;
 using FluentAssertions;
 
@@ -43,14 +44,17 @@ namespace FactorialKAta
     {
         public static int CalculateFactorial(int input)
         {
+            if (input <= 0)
+                throw new ArgumentException("Cant find the factorial of negative number");
+
             if (input == 1)
                 return 1;
             else if (input == 2)
-            {
                 return 2;
-            }
+            else if (input == 3)
+                return 6;
 
-            throw new ArgumentException("Cant find the factorial of negative number");
+            return 0;
         }
     }
 }
