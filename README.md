@@ -17,7 +17,7 @@ Cant find the factorial of negative number
 
 2 Factorial is 2*1
 
-3 Factorial is 3*2*1
+3 Factorial is 3 * 2 * 1
 
 4 Factorial is 4 * 3 * 2 * 1
 
